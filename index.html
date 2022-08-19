@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Online Registration Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet"> 
@@ -12,41 +12,53 @@
 
 <header>The Code Review</header>
 <body>
-    <h1>Sign up for the latest news</h1>
+    <h1>Sign up for our newsletter</h1>
         <p>Get the latest news on how your code is doing right now in your inbox</p>
 
     <form method="get">
         <fieldset>
             <legend>Contact Information</legend>
             <ul>
-            <input type="text" id="name" name="info">
             <label for ="name">Full Name</label>
-
-            <input type="email" id="email" name="info">
+            <input type="text" id="name" name="info" placeholder="Required">
+            
             <label for="email">Email Address</label>
-
-            <input type="tel" id="phone" name="info">
+            <input type="email" id="email" name="info" placeholder="Required">
+            
             <label for="phone">Phone number</label>
-
-            <input type="" id="street" name="info">
+            <input type="tel" id="phone" name="info">
+            
             <label for="street">Street Address</label>
-
-            <input type="" id="city" name="info">
+            <input type="text" id="street" name="info">
+            
             <label for="city">City</label>
-
-            <input type="" id="state" name="info">
+            <input type="text" id="city" name="info">
+            
             <label for="state">State</label>
-
-            <input type="number" id="zip" name="info">
+            <input type="text" id="state" name="info">
+            
             <label for="zip">Zip</label>
+            <input type="number" id="zip" name="info">
         </ul>
 
         </fieldset>
-        <label>Newsletter</label>
+        
         <fieldset>
-            <legend>Select</legend>
-            <legend>Format</legend>
-            <legend>Other topics you'd like to hear about</legend>
+            <legend>Newsletter</legend>
+
+            <p>Select the newsletters you would like to recieve</p>
+            <label><input type="checkbox" name="checkbox"> HTML News</label>
+            <label><input type="checkbox" name="checkbox"> CSS NEWS</label>
+            <label><input type="checkbox" name="checkbox"> Javascript News</label>
+
+            <p>Newsletter format</p>
+            <label><input type="radio" name="radio"> HTML</label>
+            <label><input type="radio" name="radio"> Plain text</label>
+
+            <label for="comment">Other topics you'd like to hear about</label>
+            <input type="textarea" id="comment" name="other_topics">
+
+            
         </fieldset>
 
     </form>
@@ -54,7 +66,7 @@
 
 
 
-
+<button>Sign up</button>
 
 
 
