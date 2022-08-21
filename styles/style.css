@@ -8,6 +8,7 @@ header{
     color:white;
     font-size: 20px;
     margin:auto;
+    padding: 15px;
 }
 
 body{
@@ -30,4 +31,9 @@ button{
     margin: auto;
     border: 3em;
     background-color: mediumturquoise;
+}
+
+.container{
+flex: wrap;
+
 }
