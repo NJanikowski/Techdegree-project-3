@@ -1,5 +1,10 @@
 * {
     font-family: 'Rajdhani', sans-serif;
+    display:block;
+}
+
+title{
+    display:none;
 }
 
 header{
@@ -7,12 +12,22 @@ header{
     background-color:rgb(23, 60, 85) ;
     color:white;
     font-size: 20px;
-    margin:auto;
-    padding: 15px;
+    padding:15px;
+    width:100%;
+    border: none;
+    margin:0px;
+}
+body, html{
+    margin: 0%;
+    padding: 0%;
 }
 
 body{
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
 box-sizing: border-box;
+max-width: 100%;
 
 }
 h1{
@@ -20,10 +35,34 @@ text-align: center;
 font-size: 20px;
 }
 
+.section-1 p{
+    margin: 1.0em;
+    opacity: 0.65;
+    font-size: 0.9em;
+}
+
+form{
+    max-width: 320px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    border-top: double 6px #014054;
+
+}
+#primus{
+    border-bottom: solid 3px #014054;
+}
+
+#secundus{
+    margin-top: 15px;
+}
+
 fieldset{
     box-shadow: none;
     margin: auto;
-    padding: 4em;
+    display: border-box;
+    border:none;
 }
 
 button{
@@ -31,9 +70,46 @@ button{
     margin: auto;
     border: 3em;
     background-color: mediumturquoise;
+    font-size:25px;
+}
+
+legend{
+font-weight:bold;
+font-size:1.2em;
+text-align: left;
+
 }
 
 .container{
-flex: wrap;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+
+}
+input, select{
+    max-width: 100%;
+    background-color:#e8eeef;
+}
+
+input:focus{
+margin:20px;
+border-color:mediumturquoise;
+}
+
+select:focus{
+    border-color: mediumturquoise;
+}
+
+
+
+label{
+    text-align: left;
+    font-size: 15px;
+}
+
+
+
+@media(min-width: 768px){
+
 
 }
