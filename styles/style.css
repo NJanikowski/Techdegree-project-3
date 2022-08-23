@@ -17,19 +17,30 @@ header{
     border: none;
     margin:0px;
 }
-body, html{
+ body,html{
     margin: 0%;
     padding: 0%;
 }
 
 body{
 display: flex;
-flex-wrap: nowrap;
+padding:0%;
 flex-direction: column;
 box-sizing: border-box;
-max-width: 100%;
+max-width: 1100px;
 
 }
+
+.container{
+margin:10px;
+}
+
+#copy{
+    opacity: 0.65;
+    font-style: italic;
+    font-size: 1.0rem;
+}
+
 h1{
 text-align: center;
 font-size: 20px;
@@ -42,16 +53,19 @@ font-size: 20px;
 }
 
 form{
-    max-width: 320px;
-    margin: 10px auto;
-    padding: 10px 20px;
+    max-width: 100%;
+    margin: 10px 0px 0px 12px;
     background: #f4f7f8;
-    border-radius: 8px;
     border-top: double 6px #014054;
-
 }
+
 #primus{
     border-bottom: solid 3px #014054;
+}
+
+#primus legend{
+padding-top: 15px;
+
 }
 
 #secundus{
@@ -63,14 +77,17 @@ fieldset{
     margin: auto;
     display: border-box;
     border:none;
+    padding: 0%;
 }
 
 button{
+    padding:10px;
     text-align: center;
     margin: auto;
     border: 3em;
     background-color: mediumturquoise;
     font-size:25px;
+    color: white;
 }
 
 legend{
@@ -84,8 +101,13 @@ text-align: left;
     display: flex;
     flex-direction: column;
     flex: auto;
+}
+
+.section-2{
+max-width: fit-content;
 
 }
+
 input, select{
     max-width: 100%;
     background-color:#e8eeef;
@@ -100,11 +122,36 @@ select:focus{
     border-color: mediumturquoise;
 }
 
-
+#copy{
+    text-align: center;
+}
 
 label{
     text-align: left;
     font-size: 15px;
+}
+
+input{
+    text-align: right;
+    border-radius: 3px 3px 3px 3px;
+    width: 100%;
+    height:2.5em;
+    padding: 3px;
+}
+
+label{
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+select{
+    border-radius: 3px 3px 3px 3px;
+    width: 100%;
+    height:2.5em;
+    padding:3px;
+}
+#zip{
+    max-width: 50%;
 }
 
 
