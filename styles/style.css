@@ -1,0 +1,198 @@
+* {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    display:none;
+}
+
+header{
+    color:white;
+    background-color:peru;
+    text-align: center;
+    font-size: 1.5em;
+    padding:0.50em 0.85em;
+}
+
+.section-1{
+    text-align: center;
+    padding: 0.50em 0.85em;
+}
+.section-1 p{
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    opacity: 0.65;
+
+}
+
+
+h1{
+    font-size: 1.25em;
+    padding:10px 0px;
+    font-weight: 800px;
+}
+
+
+
+.section-2{
+    display: block;
+    padding: 0em 1em;
+
+}
+
+.primus{
+    border:none;
+    border-bottom: solid 3px #014054;
+}
+
+.secundus{
+    border:none;
+    padding: 4px,auto;
+    margin-top: 15px;
+}
+
+.secundus legend{
+    margin: 15px 0px;
+}
+
+ label{
+         padding:8px 0px;
+        font-size: 1.0em;
+}
+
+
+.secundus p{
+    padding:8px 0px;
+    font-size: 1.0em;
+}
+
+form{
+   
+    max-width: 100%;
+    align-items: center;
+    background-color:rgba(117, 143, 126, 0.292);
+    padding: 10px 10px 10px 10px;
+    border-top: double 5px #003c4f;
+}
+
+.form-box, .form-con{
+    display: flex;
+    flex-direction: column;
+    max-width: 100;
+}
+
+.copy{
+    padding: 1em;
+    opacity: 0.65;
+    font-style: italic;
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+button{
+    padding:10px 72px;
+    text-align: center;
+    margin-top: 1.5em;
+    border: 3em;
+    background-color: rgb(1, 46, 44);
+    font-size:22px;
+    color: white;
+    border-radius: 6px 6px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 6px 10px 12px 0;
+  height: 1em;
+  text-align: inline;
+}
+
+
+
+legend{
+    font-weight:bold;
+    font-size:1.2em;
+    }
+
+    input, select, textarea{
+        background-color:#e8eeef;
+        box-shadow: none;
+    }
+  
+    select,
+    input[type="email"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"]{
+        border-radius: 4px 4px;
+        text-align: right;
+        height:1.5em;
+        padding: 3px;
+        border: none;
+    }
+
+#zip{
+    max-width: 50%;
+    margin-bottom: 2em;
+}
+
+input[type="textarea"]{
+    resize:none;
+    border-radius: 4px 4px;
+    height: 6.5em;
+    margin-top: 1em;
+    border:none;
+}
+
+
+@media (min-width:768px){
+
+    #zip{
+        max-width:25%;
+    }
+    #zip label{
+        flex-shrink: 3;
+    }
+
+    .form-box{
+        display:flex;
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: flex-start;
+        
+    }
+    
+
+   .section-2{
+    display: flex;
+    flex-direction: column;
+    padding:0em 11em;
+   }
+
+
+    select,
+    input[type="email"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"]{
+        border-radius: 4px 4px;
+        text-align: right;
+        height:1.5em;
+        border: none;
+        flex-grow: 4;
+        flex-basis: content;
+        max-width:50%;
+     }
+    button{
+        align-items: center;
+    }
+
+    label{
+        flex-grow: 2;
+    }
+
+    .primus label{
+       border-right: 2em;
+    }
+}
