@@ -30,7 +30,7 @@ header{
 h1{
     font-size: 1.25em;
     padding:10px 0px;
-    font-weight: 800px;
+    font-weight: 800;
 }
 
 
@@ -48,7 +48,7 @@ h1{
 
 .secundus{
     border:none;
-    padding: 4px,auto;
+    padding: 4px;
     margin-top: 15px;
 }
 
@@ -79,7 +79,7 @@ form{
 .form-box, .form-con{
     display: flex;
     flex-direction: column;
-    max-width: 100;
+    max-width: 100%;
 }
 
 .copy{
@@ -105,7 +105,6 @@ input[type="radio"],
 input[type="checkbox"] {
   margin: 6px 10px 12px 0;
   height: 1em;
-  text-align: inline;
 }
 
 
@@ -136,8 +135,7 @@ legend{
     max-width: 50%;
     margin-bottom: 2em;
 }
-
-input[type="textarea"]{
+textarea{
     resize:none;
     border-radius: 4px 4px;
     height: 6.5em;
@@ -149,10 +147,7 @@ input[type="textarea"]{
 @media (min-width:768px){
 
     #zip{
-        max-width:25%;
-    }
-    #zip label{
-        flex-shrink: 3;
+        max-width:20%;
     }
 
     .form-box{

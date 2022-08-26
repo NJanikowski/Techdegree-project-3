@@ -9,9 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet"> 
 </head>
+<body>
 
 <header>The Code Review</header>
-<body>
+
+
     
         <div class="section-1">
             <h1>Sign up for our newsletter</h1>
@@ -42,8 +44,8 @@
                         <input type="text" id="city" name="user_city" placeholder="e.g., Austin">
                     </div>
                     <div class="form-box">
-                        <label for="state">State</label>
-                        <select type="select" name="state" id="user_state">
+                        <label for="user_state">State</label>
+                        <select name="state" id="user_state">
                         <option value="state">Choose State</option>
                         <option value="state">AL</option>
                         <option value="state">AK</option>
@@ -106,16 +108,37 @@
                 <fieldset class="secundus">
                     <legend>Newsletter</legend>
                     <p>Select the newsletters you would like to recieve</p>
-                    <div class="form-square"><input type="checkbox" name="newsletters"><label>HTML News</label></checkbox></div>
-                    <div class="form-square"><input type="checkbox"name="newwsletters"><label>CSS News</label></div>
-                    <div class="form-square"><input type="checkbox" name="newsletter"><label>Javascript News</label></div>
+                    <div class="form-square">
+                        <input type="checkbox" name="newsletters">
+                        <label>HTML News</label>
+                    </div>
+                    <div class="form-square">
+                        <input type="checkbox" name="newsletters">
+                        <label>CSS News</label>
+                    </div>
+                    <div class="form-square">
+                        <input type="checkbox" name="newsletter">
+                        <label>Javascript News</label>
+                    </div>
+
                     <p>Newsletter format</p>
-                    <div class="form-square"><input type="radio" name="format"><label>HTML</label></div>
-                    <div class="form-square"><input type="radio" name="format"><label>Plain Text</label></div>
+                    <div class="form-square">
+                        <input type="radio" name="format">
+                        <label>HTML</label>
+                    </div>
+                    <div class="form-square">
+                        <input type="radio" name="format">
+                        <label>Plain Text</label>
+                    </div>
                     <p>Other topics you'd like to hear about</p>
-                    <div class="form-con"><input type="textarea" id="comment"></div>
-                </fieldset>
-                <div class="form-con">
+                    <div class="form-con">
+                        <textarea id="comment" name="comment" >
+                            
+                        </textarea>
+                    </div>
+               
+            </fieldset>
+            <div class="form-con">
                     <button type="submit">Sign Up</button>
             </div>
                 <p class="copy">Copyright The Code Review</p>
